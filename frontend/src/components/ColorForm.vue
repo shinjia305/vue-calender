@@ -7,14 +7,7 @@
           <v-icon color="rgba(0, 0, 0, 0.6)" size="24px">mdi-menu-down</v-icon>
         </v-btn>
       </template>
-      <v-color-picker
-        hide-canvas
-        hide-inputs
-        show-swatches
-        :value="value"
-        @input="$emit('input', $event)"
-      >
-      </v-color-picker>
+      <v-color-picker hide-canvas hide-inputs show-swatches :value="value" @input="$emit('input', $event)"> </v-color-picker>
     </v-menu>
   </div>
 </template>
@@ -23,5 +16,5 @@
 export default {
   name: 'ColorForm',
   props: ['value'],
-}
+};
 </script>
