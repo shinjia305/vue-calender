@@ -15,9 +15,9 @@
           <TimeForm v-model="startTime" />
         </div>
         <span class="px-2">–</span>
-        <DateForm v-model="endDate"  :isError="isInvalidDatetime"/>
+        <DateForm v-model="endDate" :isError="isInvalidDatetime" />
         <div v-show="!allDay">
-          <TimeForm v-model="endTime"  :isError="isInvalidDatetime"/>
+          <TimeForm v-model="endTime" :isError="isInvalidDatetime" />
         </div>
       </DialogSection>
       <DialogSection>
@@ -81,7 +81,7 @@ export default {
       return !isGreaterEndThanStart(this.startDate, this.startTime, this.endDate, this.endTime, this.allDay);
     },
     isInvalid() {
-     return this.$v.$invalid || this.isInvalidDatetime;
+      return this.$v.$invalid || this.isInvalidDatetime;
     },
   },
   created() {
