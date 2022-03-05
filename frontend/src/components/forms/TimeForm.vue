@@ -1,7 +1,7 @@
 <template>
   <v-menu offset-y>
     <template v-slot:activator="{ on }">
-      <v-btn text v-on="on" :class="{ 'red lighten-4 rounded' : isError}">
+      <v-btn text v-on="on" :class="{ 'red lighten-4 rounded': isError }">
         {{ value || '日付を選択' }}
       </v-btn>
     </template>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { getTimeIntervalList } from '../functions/datetime';
+import { getTimeIntervalList } from '../../functions/datetime';
 
 export default {
   name: 'TimeForm',
