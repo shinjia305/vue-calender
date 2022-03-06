@@ -48,7 +48,7 @@ import TimeForm from '../forms/TimeForm';
 import TextForm from '../forms/TextForm';
 import ColorForm from '../forms/ColorForm';
 import CheckBox from '../forms/CheckBox';
-import { isGreaterEndThanStart } from '../../functions/datetime'
+import { isGreaterEndThanStart } from '../../functions/datetime';
 
 export default {
   name: 'EventFormDialog',
